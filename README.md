@@ -18,6 +18,17 @@ Makes tables more readable for humans. Compatible with the Markdown writer plugi
 
 The extension is available for markdown language mode. It can either format a selected table (`Format Selection`) or the entire document (`Format Document`).
 
+## Usage
+
+In order for table to be properly formatted, it should contain the header and the body. Header separator should be formatted using `|` and `-` characters (`+` does not work as for now). For example:
+
+```
+| Key    | Value   |
+|--------|---------|
+| Key 1  | Value 1 |
+| Key 2  | Value 2 |
+```
+
 ## Known Issues
 
 - Tables with mixed character widths (eg: CJK) are not always properly formatted (issue #4).
